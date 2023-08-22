@@ -15,7 +15,6 @@ const Catalogue = () => {
             url: 'https://api.themoviedb.org/3/discover/movie',
             params: {
                 api_key: import.meta.env.VITE_API_KEY, 
-                // import.meta.env.VITE_API_KEY,
                 language: 'en-US',
                 sort_by: 'popularity.desc',
                 include_adult: 'false',

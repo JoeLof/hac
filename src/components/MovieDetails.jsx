@@ -17,7 +17,6 @@ const MovieDetails = () => {
             url: `https://api.themoviedb.org/3/movie/${movieID}`,
             params: {
                 api_key: import.meta.env.VITE_API_KEY
-                // import.meta.env.VITE_API_KEY
             },
         }).then((res) => {
             setMovie(res.data);
