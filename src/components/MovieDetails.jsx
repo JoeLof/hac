@@ -10,16 +10,21 @@ const MovieDetails = () => {
     const [movie, setMovie] = useState({});
     const { original_title, tagline, overview, poster_path } = movie;
 
+
+
     useEffect(() => {
         axios({
             url: `https://api.themoviedb.org/3/movie/${movieID}`,
             params: {
-                api_key: 'eb3e7923af452926342a0202b1bbe5df'
+                api_key: import.meta.env.VITE_API_KEY
+                // import.meta.env.VITE_API_KEY
             },
         }).then((res) => {
             setMovie(res.data);
+            
         })
     }, []);
+
     return (
 
         <>
