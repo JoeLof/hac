@@ -21,7 +21,7 @@ const Catalogue = () => {
                 include_video: 'false',
                 region: 'us',
                 page: 1,
-                primary_release_year: 1986,
+                primary_release_year: 1995,
             },
 
         })
